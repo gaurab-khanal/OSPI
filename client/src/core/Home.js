@@ -1,11 +1,9 @@
 import React from 'react'
 import '../styles.css'
-import { API } from './../backend';
 import Base from './Base';
 
 
 const Home = () => {
-    console.log("API IS", API)
   return (
     <Base title="Open Source Programs and Internships">
     <div className="container-fluid">
