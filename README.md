@@ -1,3 +1,6 @@
+# OSPI
+A simple fullstack MERN app where user can find different opensource programs and learn more about it. Non logged in user can only view the programs and logged in users can add the open source program they are aware of.
+
 # Open Source Prorams and Internships
 
 ## Contributing to the project
@@ -58,4 +61,3 @@
  ```bash
   $ npm start
   ```
-  
