@@ -24,7 +24,7 @@ const NavBar = ({history}) => {
       
     const navigate = useNavigate();
     const handleContributeClick = () => {
-        window.open('https://github.com', '_blank');
+        window.open('https://github.com/gaurab-khanal/OSPI', '_blank');
       };
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
