@@ -13,9 +13,19 @@ exports.signup = (req, res)=>{
             param: errors.array()[0].param
         })
     }
-
+    
 
     const user = new User(req.body)
+
+    const {email} = req.body
+
+    const existingUser =  User.findOne({email})
+
+    if(existingUser){
+        res.status(401).send("User already exists")
+    }
+    
+    
     user.save((err, user)=>{
         if(err){
             return res.status(400).json({
