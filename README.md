@@ -9,7 +9,7 @@ A simple fullstack MERN app where user can find different opensource programs an
 
 ### 1. Get the code
 
-- Fork and then clone the [mlhclient repository](https://github.com/gaurab-khanal/ospi)
+- Fork and then clone
   ```bash
   $ git clone https://github.com/YOUR-USERNAME/ospi
   ```
