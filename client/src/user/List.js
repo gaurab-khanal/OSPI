@@ -8,7 +8,7 @@ import Card from './../core/Card';
 
 
 const List = ({ programs }) => {
-
+    console.log(programs);
     return (
         <Base title="Programs">
 
