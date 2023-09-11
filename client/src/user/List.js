@@ -1,18 +1,13 @@
 import React, { useState, useEffect } from "react";
 import Base from "../core/Base";
 import Card from './../core/Card';
-import { list } from "./helper/userapicalls";
-import { useLoaderData } from "react-router-dom"
 
 
 
 
 
-const List = () => {
 
-   const programs = useLoaderData();
-
-
+const List = ({ programs }) => {
 
     return (
         <Base title="Programs">
