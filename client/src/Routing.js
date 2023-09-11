@@ -7,7 +7,7 @@ import Add from './user/Add';
 import PrivateRoute from './auth/helper/PrivateRoutes';
 import { isAuthenticated } from './auth/helper/index';
 import List from './user/List';
-import { list } from "./helper/userapicalls";
+import { list } from "./user/helper/userapicalls";
 
 
 
