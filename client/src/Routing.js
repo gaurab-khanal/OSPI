@@ -24,7 +24,7 @@ export const Routing = () => {
       <Route path="/" element={<Home/>}/>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/signin" element={<Signin/>}/>
-      <Route path="/list"  loader={list} element={<List/>}/>
+      <Route path="/list"  loader={() => list()} element={<List/>}/>
       <Route element={<PrivateRoute token= {token} />}>
         <Route path='/add' element={<Add/>}/>
       </Route>
