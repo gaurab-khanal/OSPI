@@ -42,7 +42,8 @@ const Signin = ()=>{
             }
             
         })
-        .catch(()=>{
+        .catch((error)=>{
+            console.log(error)
             console.log("Signin request failed")
         });
     }
