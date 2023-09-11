@@ -9,22 +9,7 @@ import { list } from "./helper/userapicalls";
 
 const List = () => {
 
-    const [programs, setPrograms] = useState([]);
-    const [error, setError] = useState(false);
-
-    const loadAllPrograms = () => {
-        list().then(data => {
-            if (data.error) {
-                setError(data.error)
-            } else {
-                setPrograms(data)
-            }
-        })
-    }
-
-    useEffect(() => {
-        loadAllPrograms();
-    })
+   const programs = useLoaderData();
 
 
 
