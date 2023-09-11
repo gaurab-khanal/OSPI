@@ -7,6 +7,8 @@ import Add from './user/Add';
 import PrivateRoute from './auth/helper/PrivateRoutes';
 import { isAuthenticated } from './auth/helper/index';
 import List from './user/List';
+import { list } from "./helper/userapicalls";
+
 
 
 
@@ -22,7 +24,7 @@ export const Routing = () => {
       <Route path="/" element={<Home/>}/>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/signin" element={<Signin/>}/>
-      <Route path="/list" element={<List/>}/>
+      <Route path="/list"  loader={list} element={<List/>}/>
       <Route element={<PrivateRoute token= {token} />}>
         <Route path='/add' element={<Add/>}/>
       </Route>
